@@ -9,7 +9,7 @@
 			$this->words = (array_count_values(str_word_count(strtolower($file_content), 1)));
 		}
 		
-	    public function count($order) {
+	    public function word_count($order) {
 			if($order == self::ASC) {
 				asort($this->words);
 			}  else if($order == self::DESC) {
