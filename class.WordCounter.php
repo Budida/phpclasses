@@ -1,7 +1,7 @@
 <?php
 	class WordCounter {
-		const ASC  =  1;
-		const DESC =  2;
+		private static const ASC  =  1;
+		private static const DESC =  2;
 	        private $words;
 	    
 	    function __construct($filename) {
@@ -16,7 +16,7 @@
 				arsort($this->words);
 			   }
 			foreach ($this->words as $key=>$val) {
-				echo $key ." = ". $val . "<br />";
+				return $key ." = ". $val . "<br />";
 			}
 		}
 	}
